@@ -1,1 +1,12 @@
-<mat-slider min="min" max="max" step="step" value="value"></mat-slider>
+<mat-form-field>
+  <input matInput [matDatepicker] = "picker" placeholder = "Your birthday">
+  <mat-datepicker-toggle matSuffix [for] = "picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<hr>
+<mat-form-field appearance="fill">
+  <mat-label>Different locale</mat-label>
+  <input matInput [matDatepicker]="dp">
+  <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+  <mat-datepicker #dp></mat-datepicker>
+</mat-form-field>
